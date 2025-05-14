@@ -19,7 +19,14 @@ public class DialogContent {
 
     @FindBy(xpath = "//input[@value='Login']")
     public WebElement loginButton;
+
     @FindBy(xpath = "//h2[text()='My Account']")
     public WebElement myAccount;
+
+    @FindBy(xpath = "(//button[span[contains(text(),'Add to Cart')]])[4]")
+    public WebElement ipod4;
+
+    @FindBy(css = "div#content > h1")
+    public WebElement assertMessage;
 
 }
