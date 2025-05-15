@@ -23,10 +23,15 @@ public class DialogContent {
     @FindBy(xpath = "//h2[text()='My Account']")
     public WebElement myAccount;
 
-    @FindBy(xpath = "(//button[span[contains(text(),'Add to Cart')]])[4]")
-    public WebElement ipod4;
+
 
     @FindBy(css = "div#content > h1")
     public WebElement assertMessage;
+    @FindBy(xpath = "(//a[text()='Address Book'])[1]")
+    public WebElement addressBookLink;
+    @FindBy(xpath = "//a[text()='New Address']")
+    public WebElement newAddressButton;
+    @FindBy(xpath = "//div[contains(@class,'alert-success')]")
+    public WebElement assertMessageAddress;
 
-}
+    }

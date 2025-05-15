@@ -22,6 +22,19 @@ public class Header {
 
     @FindBy(xpath = "(//a[contains(@href,'checkout/cart')])[2]")
     public WebElement viewCart;
+    @FindBy(xpath = "(//span[text()='Add to Cart'])[1]")
+    public WebElement item1;
+    public WebElement getWebElement(String element){
+        switch (element){
+            case "searchInput": return this.searchInput;
+            case "item1": return this.item1;
+            case "searchButton": return this.searchButton;
+            case "addCart": return this.addCart;
+            case "viewCart": return this.viewCart;
+
+        }
+        return null;
+    }
 
 
 

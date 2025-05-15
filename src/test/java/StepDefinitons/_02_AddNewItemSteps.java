@@ -32,7 +32,7 @@ public class _02_AddNewItemSteps extends Parent {
     @When("Add to Cart and Check")
     public void addToCartAndCheck() {
 
-        clickFunction(dc.ipod4);
+        clickFunction(h.item1);
         clickFunction(h.addCart);
         clickFunction(h.viewCart);
 
