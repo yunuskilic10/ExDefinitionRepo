@@ -11,6 +11,7 @@ public class DialogContent {
     }
 
 
+
     @FindBy(id = "input-email")
     public WebElement email;
 
@@ -30,16 +31,28 @@ public class DialogContent {
     public WebElement addressBookLink;
     @FindBy(xpath = "//a[text()='New Address']")
     public WebElement newAddressButton;
-    @FindBy(xpath = "(//a[contains(@href, 'delete')])[2]")
+    @FindBy(xpath = "delete')])[(//a[contains(@href, '2]")
     public WebElement deleteButton;
     @FindBy(xpath = "//div[contains(@class,'alert-success')]")
     public WebElement assertMessageAddress;
     @FindBy(css = "input[value='Continue']")
     public WebElement continueButton;
+    @FindBy(linkText = "Edit Account")
+    public WebElement editAccount;
+    @FindBy(name = "lastname")
+    public WebElement editName;
+    @FindBy (css="input.btn.btn-primary[type='submit']")
+    public WebElement updateButton;
+    @FindBy(css=".alert.alert-success.alert-dismissible")
+    public WebElement newAssertMessage;
 
     public WebElement getWebElement(String element){
         switch (element){
+            case "newAssertMessage": return this.newAssertMessage;
             case "deleteButton": return this.deleteButton;
+            case "updateButton": return this.updateButton;
+            case "editAccount": return this.editAccount;
+            case "editName": return this.editName;
             case "email": return this.email;
             case "password": return this.password;
             case "loginButton": return this.loginButton;
