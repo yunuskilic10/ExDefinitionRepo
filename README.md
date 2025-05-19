@@ -1,1 +1,1 @@
-Cucumber  vasıtasıyla ötnek test senarryoları yazmak.
+Cucumber  vasıtasıyla örnek test senarryoları yazmak.
