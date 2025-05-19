@@ -33,7 +33,7 @@ public class _04_NewAddressCreateSteps extends Parent {
 
     @And("full form and click continue button")
     public void fullFormAndClickContinueButton() {
-        clickFunction(fc.continueButton);
+        clickFunction(dc.continueButton);
     }
 
     @Then("Should be added new address")

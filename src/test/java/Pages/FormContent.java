@@ -6,10 +6,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class FormContent {
-    public FormContent(){
+    public FormContent() {
 
-        PageFactory.initElements(GWD.getDriver(),this);
+        PageFactory.initElements(GWD.getDriver(), this);
     }
+
     @FindBy(id = "input-firstname")
     public WebElement firstName;
 
@@ -30,21 +31,27 @@ public class FormContent {
 
     @FindBy(id = "input-zone")
     public WebElement selectRegionState;
-    @FindBy(css = "input[value='Continue']")
-    public WebElement continueButton;
 
-    public WebElement getWebElement(String element){
-        switch (element){
-            case "firstName": return this.firstName;
-            case "lastName": return this.lastName;
-            case "address1": return this.address1;
-            case "city": return this.city;
-            case "postCode": return this.postCode;
-            case "selectCountry": return this.selectCountry;
-            case "selectRegionState": return this.selectRegionState;
-            case "continueButton": return this.continueButton;
+
+    public WebElement getWebElement(String element) {
+        switch (element) {
+            case "firstName":
+                return this.firstName;
+            case "lastName":
+                return this.lastName;
+            case "address1":
+                return this.address1;
+            case "city":
+                return this.city;
+            case "postCode":
+                return this.postCode;
+            case "selectCountry":
+                return this.selectCountry;
+            case "selectRegionState":
+                return this.selectRegionState;
         }
         return null;
     }
-
 }
+
+
