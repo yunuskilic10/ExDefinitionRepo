@@ -15,8 +15,8 @@ public class _11_UpdateSteps extends Parent {
     public void enterUpdateNameToEditNameButton(DataTable dt) {
         List<List<String>> editList = dt.asLists(String.class);
         for (int i = 0; i < editList.size(); i++) {
-            String elementKey = editList.get(i).get(0); // örn. "editName"
-            String valueToSend = editList.get(i).get(1); // örn. "ipod"
+            String elementKey = editList.get(i).get(0);
+            String valueToSend = editList.get(i).get(1);
             WebElement element = dC.getWebElement(elementKey);
             if (valueToSend == null || valueToSend.isEmpty()) {
                 throw new IllegalArgumentException("sendKeys fonksiyonuna boş veya null değer gönderilemez!");

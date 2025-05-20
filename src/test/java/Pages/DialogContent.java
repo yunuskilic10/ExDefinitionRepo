@@ -31,8 +31,6 @@ public class DialogContent {
     public WebElement addressBookLink;
     @FindBy(xpath = "//a[text()='New Address']")
     public WebElement newAddressButton;
-    @FindBy(xpath = "delete')])[(//a[contains(@href, '2]")
-    public WebElement deleteButton;
     @FindBy(xpath = "//div[contains(@class,'alert-success')]")
     public WebElement assertMessageAddress;
     @FindBy(css = "input[value='Continue']")
@@ -45,6 +43,8 @@ public class DialogContent {
     public WebElement updateButton;
     @FindBy(css=".alert.alert-success.alert-dismissible")
     public WebElement newAssertMessage;
+    @FindBy(xpath = "(//a[contains(@href, 'delete')])[2]")
+    public WebElement deleteButton;
 
     public WebElement getWebElement(String element){
         switch (element){
