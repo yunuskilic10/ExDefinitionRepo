@@ -1,6 +1,6 @@
 Feature: New Item Add to Cart
 
-
+  @RegressionTest
   Scenario: Add New Item
 
     Given Navigate to Opencart

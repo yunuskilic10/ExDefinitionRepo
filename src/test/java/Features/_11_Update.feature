@@ -5,7 +5,7 @@ Feature: Update  Item
     When Enter username and password and click login button
     Then User should login successfully
 
-
+   @SmokeTest @RegressionTest
   Scenario Outline: Add new item with scenario outline
     When Click to DC elements with Data Table
       |editAccount|

@@ -1,5 +1,5 @@
 Feature: Add new address and than delete
-
+  @RegressionTest
   Scenario: Add and delete scenario
 
     Given Navigate to Opencart

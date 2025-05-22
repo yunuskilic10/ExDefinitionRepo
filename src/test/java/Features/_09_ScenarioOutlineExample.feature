@@ -1,6 +1,6 @@
 Feature: Example Scenario Outline
 
-
+  @RegressionTest
   Scenario Outline: Example scenario outline with data table
     Given Navigate to Opencart
     And User sending username and password

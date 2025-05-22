@@ -6,6 +6,7 @@ Feature: Add new Item
     Then User should login successfully
 
 
+
   Scenario Outline: Add new item with scenario outline
     When Add new item with SO
       | searchInput | <newItem> |

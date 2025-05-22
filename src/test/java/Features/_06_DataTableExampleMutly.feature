@@ -1,6 +1,6 @@
 Feature: Multy Data Table
 
-
+   @SmokeTest
   Scenario: DataTable multy items
     And Send this items with Data Table
       | iphone  | 15 pro    |
