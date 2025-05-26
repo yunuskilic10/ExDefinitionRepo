@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 @CucumberOptions(
-        tags = "@RegressionTest and @SmokeTest",
+        tags = "@SmokeTest",
         features = {"src/test/java/Features"},
         glue = {"StepDefinitons"},
         plugin = {
