@@ -8,11 +8,16 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 @CucumberOptions(
-        tags ="@RegressionTest and @SmokeTest",
+        tags = "@RegressionTest and @SmokeTest",
         features = {"src/test/java/Features"},
         glue = {"StepDefinitons"},
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+        plugin = {
+                "pretty",
+                "json:target/cucumber.json",
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+        }
 )
+
 public class _08_RunnerParallelTest extends AbstractTestNGCucumberTests {
     @BeforeClass
     @Parameters("browserType")
