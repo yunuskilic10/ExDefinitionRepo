@@ -2,14 +2,8 @@ package StepDefinitons;
 
 import Pages.DialogContent;
 import Pages.Parent;
-import Utilities.GWD;
+import Utilities.GWD_second;
 import io.cucumber.java.en.*;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-
-import java.time.Duration;
 
 
 public class _01_LoginSteps extends Parent {
@@ -18,8 +12,8 @@ public class _01_LoginSteps extends Parent {
 
     @Given("Navigate to Opencart")
     public void navigateToOpencart() {
-        GWD.getDriver().get("https://opencart.abstracta.us/index.php?route=account/login");
-        GWD.getDriver().manage().window().maximize();
+        GWD_second.getDriver().get("https://opencart.abstracta.us/index.php?route=account/login");
+        GWD_second.getDriver().manage().window().maximize();
     }
 
     @When("Enter username and password and click login button")

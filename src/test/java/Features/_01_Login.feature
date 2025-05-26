@@ -1,5 +1,5 @@
 Feature: Login Functionality
-    @SmokeTest
+    @SmokeTest @RegressionTest
   Scenario: Login with valid username and password
 
     Given Navigate to Opencart

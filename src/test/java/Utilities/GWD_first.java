@@ -8,7 +8,7 @@ import java.util.Locale;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class GWD {
+public class GWD_first {
     public static WebDriver driver;
     public static WebDriver getDriver(){
         Locale.setDefault(new Locale("EN"));

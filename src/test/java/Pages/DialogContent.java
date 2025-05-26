@@ -1,13 +1,14 @@
 package Pages;
 
-import Utilities.GWD;
+import Utilities.GWD_first;
+import Utilities.GWD_second;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class DialogContent {
     public DialogContent() {
-        PageFactory.initElements(GWD.getDriver(), this);
+        PageFactory.initElements(GWD_second.getDriver(), this);
     }
 
 
