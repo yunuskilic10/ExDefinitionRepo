@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"StepDefinitons"},
         plugin = {
                 "pretty",
-                "json:target/cucumber.json",
+                "json:target/cucumber-regression-smoke.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         }
 )
