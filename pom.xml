@@ -79,7 +79,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.32</version> <!-- 2025 itibariyle en güncel sürüm -->
+            <version>1.18.30</version> <!-- 2025 itibariyle en güncel sürüm -->
             <scope>provided</scope>
         </dependency>
 
