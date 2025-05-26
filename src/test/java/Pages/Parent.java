@@ -40,6 +40,7 @@ public class Parent {
 
     }
     public void waitUntilVisible(WebElement element){
+
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
@@ -47,6 +48,7 @@ public class Parent {
         wait.until(ExpectedConditions.elementToBeClickable(element));
 
     }
+
 
 
 }
