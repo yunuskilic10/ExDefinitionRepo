@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mySuite2" >
+
+
+    <test name="test2">
+
+
+        <classes>
+            <class name="Runners._07_RunnerExtentReport"></class>
+        </classes>
+    </test>
+</suite>

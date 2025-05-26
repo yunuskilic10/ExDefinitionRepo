@@ -94,6 +94,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/java/XML/ParallelTest.xml</suiteXmlFile>
+                         <suiteXmlFile>src/test/java/XML/Regression.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
